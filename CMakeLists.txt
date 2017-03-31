@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project( BlurImage )
+set(CMAKE_CXX_STANDARD 14)
 find_package( OpenCV PATHS /opt/machine )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 add_executable( BlurImage BlurImage.cpp )
